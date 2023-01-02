@@ -141,7 +141,7 @@ public class VillaAPIController : ControllerBase
             if (updateDTO == null || id != updateDTO.Id)
                 return BadRequest();
 
-            var villa = await _respository.GetAsync(v => v.Id == updateDTO.Id);
+            var villa = await _respository.GetAsync(v => v.Id == updateDTO.Id, isTracked:false);
             if (villa == null)
             {
                 ModelState.AddModelError("", "Villa does not exits!");

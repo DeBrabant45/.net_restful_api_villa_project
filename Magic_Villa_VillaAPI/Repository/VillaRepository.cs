@@ -15,7 +15,6 @@ public class VillaRepository : Repository<Villa>, IVillaRepository
         _context = context;
     }
 
-
     public async Task<Villa> UpdateAsync(Villa villa)
     {
         villa.UpdatedDate = DateTime.Now;

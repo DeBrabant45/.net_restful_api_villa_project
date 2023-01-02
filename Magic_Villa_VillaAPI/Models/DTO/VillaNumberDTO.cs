@@ -6,8 +6,12 @@ public class VillaNumberDTO
 {
     [Required]
     public int Number { get; set; }
+
     [Required]
     public int VillaId { get; set; }
+
     [MaxLength(255)]
     public string Details { get; set; }
+
+    public Villa Villa { get; set; }
 }
