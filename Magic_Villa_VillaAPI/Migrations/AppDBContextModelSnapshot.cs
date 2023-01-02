@@ -31,7 +31,6 @@ namespace MagicVillaVillaAPI.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Amenity")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -39,12 +38,10 @@ namespace MagicVillaVillaAPI.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Details")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -73,40 +70,40 @@ namespace MagicVillaVillaAPI.Migrations
                         {
                             Id = 1,
                             Amenity = "Testing amenity here!",
-                            CreatedDate = new DateTime(2022, 12, 30, 13, 23, 54, 712, DateTimeKind.Local).AddTicks(6123),
+                            CreatedDate = new DateTime(2023, 1, 2, 11, 43, 2, 739, DateTimeKind.Local).AddTicks(732),
                             Details = "Testing Details here for you!",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa3.jpg",
                             Name = "Test Valla 1",
                             Occupancy = 5,
                             Rate = 200.0,
                             Sqft = 1200,
-                            UpdatedDate = new DateTime(2022, 12, 30, 13, 23, 54, 712, DateTimeKind.Local).AddTicks(6160)
+                            UpdatedDate = new DateTime(2023, 1, 2, 11, 43, 2, 739, DateTimeKind.Local).AddTicks(778)
                         },
                         new
                         {
                             Id = 2,
                             Amenity = "Testing amenity here!",
-                            CreatedDate = new DateTime(2022, 12, 30, 13, 23, 54, 712, DateTimeKind.Local).AddTicks(6163),
+                            CreatedDate = new DateTime(2023, 1, 2, 11, 43, 2, 739, DateTimeKind.Local).AddTicks(782),
                             Details = "Testing Details here for you!",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa4.jpg",
                             Name = "Test Valla 2",
                             Occupancy = 3,
                             Rate = 150.0,
                             Sqft = 1000,
-                            UpdatedDate = new DateTime(2022, 12, 30, 13, 23, 54, 712, DateTimeKind.Local).AddTicks(6164)
+                            UpdatedDate = new DateTime(2023, 1, 2, 11, 43, 2, 739, DateTimeKind.Local).AddTicks(784)
                         },
                         new
                         {
                             Id = 3,
                             Amenity = "Testing amenity here!",
-                            CreatedDate = new DateTime(2022, 12, 30, 13, 23, 54, 712, DateTimeKind.Local).AddTicks(6166),
+                            CreatedDate = new DateTime(2023, 1, 2, 11, 43, 2, 739, DateTimeKind.Local).AddTicks(787),
                             Details = "Testing Details here for you!",
                             ImageUrl = "https://dotnetmasteryimages.blob.core.windows.net/bluevillaimages/villa5.jpg",
                             Name = "Test Valla 3",
                             Occupancy = 6,
                             Rate = 250.0,
                             Sqft = 1500,
-                            UpdatedDate = new DateTime(2022, 12, 30, 13, 23, 54, 712, DateTimeKind.Local).AddTicks(6167)
+                            UpdatedDate = new DateTime(2023, 1, 2, 11, 43, 2, 739, DateTimeKind.Local).AddTicks(789)
                         });
                 });
 
